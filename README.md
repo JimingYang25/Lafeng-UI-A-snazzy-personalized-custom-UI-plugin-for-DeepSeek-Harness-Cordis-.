@@ -1,11 +1,12 @@
-# 拉风 · La Feng
+# [拉风] · La Feng-UI
 
-**DSH（DeepSeek Harness）多功能 UI 插件** —— 皮肤定制 + 动态壁纸 + 背景音乐播放器 + 声浪可视化 + 人设提示词，开箱即用，完全独立于 web-ui 全家桶。
+**DSH（DeepSeek Harness）多功能 UI 插件** —— 皮肤定制 + 动态壁纸 + 背景音乐播放器 + 声浪可视化 + 人设提示词，开箱即用。
 
 > **作者**：@铭拉风
 > **抖音号**：58851640943
 
 ---
+<img width="1672" height="941" alt="la-feng-default-static" src="https://github.com/user-attachments/assets/d47f2b5b-bd8a-4b43-89c2-687c89757be2" />
 
 ## 功能特性 / Features
 
