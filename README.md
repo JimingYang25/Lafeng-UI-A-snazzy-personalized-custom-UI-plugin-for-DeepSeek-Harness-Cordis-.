@@ -1,5 +1,7 @@
 # [拉风] · La Feng-UI
 
+[![DSH Market](https://raw.githubusercontent.com/2BingLing/dsh-market/master/assets/readme/badge-listed-zh.svg)](https://dsh.market/)
+
 **DSH（DeepSeek Harness）多功能 UI 插件** —— 皮肤定制 + 动态壁纸 + 背景音乐播放器 + 声浪可视化 + 人设提示词 + AI 角色专属表情包，开箱即用。
 
 > **作者**：@铭拉风
