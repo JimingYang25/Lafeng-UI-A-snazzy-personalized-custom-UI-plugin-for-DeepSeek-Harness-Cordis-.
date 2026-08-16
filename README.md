@@ -1,4 +1,4 @@
-# 拉风 · La Feng
+# [拉风] · La Feng-UI
 
 **DSH（DeepSeek Harness）多功能 UI 插件** —— 皮肤定制 + 动态壁纸 + 背景音乐播放器 + 声浪可视化 + 人设提示词，开箱即用。
 
