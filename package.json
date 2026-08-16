@@ -1,0 +1,32 @@
+{
+  "name": "@linxin666/dsh-client-ui-la-feng",
+  "version": "0.1.0",
+  "description": "拉风 La Feng — DSH 多功能 UI 插件：皮肤/动态壁纸/背景音乐/声浪/人设/设置中心。",
+  "author": "铭拉风 (@铭拉风 · 抖音 58851640943)",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "MIT",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "background",
+    "music",
+    "video",
+    "README.md",
+    "LICENSE"
+  ]
+}
