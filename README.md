@@ -20,33 +20,31 @@
 
 ## 安装 / Install
 
-本插件是一个标准的 DSH web 插件包（`dsh.client` 声明 + `cordis.patch.yml` 挂载）。
+本插件是一个标准的 DSH web 插件包（声明了 `dsh.bundle.patch`，会被 `dsh plugin add` **自动挂载**）。
 
-### 方式一：pnpm 安装 + 手动挂载
+### 一键安装（推荐）
 
 ```bash
-# 1. 安装依赖（本地路径或 GitHub 仓库均可）
-dsh plugin --profile web add /path/to/dsh-client-ui-la-feng
-# 或
-dsh plugin --profile web add https://github.com/JimingYang25/Lafeng-UI-A-snazzy-personalized-custom-UI-plugin-for-DeepSeek-Harness-Cordis-.git
+# 从 GitHub 安装
+dsh plugin --profile web add https://github.com/JimingYang25/Lafeng-UI-A-snazzy-personalized-custom-UI-plugin-for-DeepSeek-Harness-Cordis-..git
 
-# 2. 挂载：编辑 ~/.dsh/profiles/web/cordis.patch.yml，加入：
+# 或从本地路径安装
+dsh plugin --profile web add /path/to/dsh-client-ui-la-feng
+```
+
+`dsh plugin add` 底层先 `pnpm add` 安装依赖，再自动把声明了 `dsh.bundle` 的插件挂载进 profile 的 `dsh.profile.bundles`，**无需手动写挂载行**。
+
+### 手动安装（备选）
+
+```bash
+# 1. 将本目录放到 ~/.dsh/profiles/web/node_modules/@linxin666/dsh-client-ui-la-feng/
+# 2. 在 ~/.dsh/profiles/web/cordis.patch.yml 中加入：
 #   - insert:
 #       - id: ui-la-feng
 #         name: '@linxin666/dsh-client-ui-la-feng'
 ```
 
-### 方式二：手动放入 + 挂载
-
-```bash
-# 1. 将本目录放到 ~/.dsh/profiles/web/node_modules/@linxin666/dsh-client-ui-la-feng/
-# 2. 在 ~/.dsh/profiles/web/cordis.patch.yml 中加入同样的 insert 行
-```
-
-> 注意：`dsh plugin add` 底层是 `pnpm add`，只安装依赖，**不会自动挂载**。
-> 安装后必须再写上面第 2 步的 `insert` 行，插件才会被 boot 图加载。
-
-安装并挂载后重启 DSH 即可生效。
+安装后重启 DSH 即可生效。
 
 ---
 
